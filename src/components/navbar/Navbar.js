@@ -13,17 +13,46 @@ export const NavBar = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto" style={{ paddingLeft: "350px", fontSize: "20px" }}>
-                        <Link to='/inicio' style={{ textDecoration: 'none' }}>Inicio</Link>
-                        <NavDropdown title="Tienda" id="basic-nav-dropdown">
-                            <Link to='/livingcomedor/:productosLivCom'>
-                                Living y Comedor</Link>
-                                <br/>
-                            <Link href="#dormitorioBanio">
-                                Dormitorio y Baño
+                        <Link to='/inicio' style={{ textDecoration: 'none', paddingLeft: "30px" }}>Inicio</Link>
+                        <NavDropdown title='Living y Comedor'>
+                            <Link to='/livingComedor'>
+                                Todos los articulos
+                            </Link>
+                            <br />
+                            <Link to='/livingComedor/accesorio'>
+                                Accesorio
+                            </Link>
+                            <br />
+                            <Link to='/livingComedor/mantel'>
+                                Manteles
+                            </Link>
+                            <br />
+                            <Link to='/livingComedor/cortina'>
+                                Cortinas
                             </Link>
                         </NavDropdown>
-                        <Link href="#acercaDe" style={{ textDecoration: 'none' }} >Acerca de</Link>
-                        <Link href="#contacto" style={{ textDecoration: 'none' }}>Contacto</Link>
+
+
+                        <NavDropdown title='Dormitorio y Baño'>
+                            <Link to='/dormitorioBanio'>
+                                Todos los articulos
+                            </Link>
+                            <br />
+                            <Link to='/dormitorioBanio/acolchado'>
+                                Acolchados
+                            </Link>
+                            <br />
+                            <Link to='/dormitorioBanio/alfombra'>
+                                Alfombras
+                            </Link>
+                            <br />
+                            <Link to='/dormitorioBanio/frazada'>
+                                Frazadas
+                            </Link>
+                        </NavDropdown>
+
+                        <Link href="#acercaDe" style={{ textDecoration: 'none', paddingLeft: "30px" }} >Acerca de</Link>
+                        <Link href="#contacto" style={{ textDecoration: 'none', paddingLeft: "30px" }}>Contacto</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

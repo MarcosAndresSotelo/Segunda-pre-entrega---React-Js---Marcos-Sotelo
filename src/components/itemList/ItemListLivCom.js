@@ -1,7 +1,6 @@
 import { ItemLivCom } from "../item/ItemLivCom"
 
 
-
 export const ItemListLivCom = ({ productos }) => {
 
     return (
@@ -11,13 +10,11 @@ export const ItemListLivCom = ({ productos }) => {
             <br />
             <h2>Productos</h2>
             <hr />
-            
-                <div key={productos.id} className='container my-5'>
-                    {
-                        productos.map((prod) => <ItemLivCom key={prod.id} prod={prod} />)
-                    }
-                </div>
-           
+            <div className='container my-5'>
+                {
+                    productos.map((prod) => <ItemLivCom key={prod.id} prod={prod} />)
+                }
+            </div>
         </div>
 
 

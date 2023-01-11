@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import productoPromesaLivCom from '../../helper/productoPromesaLivCom';
-import ItemListLivCom from '../itemList/ItemListLivCom';
+import productoPromesaDorBanio from '../../helper/productoPromesaDorBanio';
+import ItemListDorBanio from '../itemList/ItemListDorBanio';
 import { useParams } from 'react-router-dom';
 
 // ---------------------------------
 
-export const ItemListContainerLivCom = () => {
+export const ItemListContainerDorBanio = () => {
     const [productos, setProductos] = useState([]);
     const [Cargando, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -15,7 +15,7 @@ export const ItemListContainerLivCom = () => {
 
     useEffect(() => {
         setIsLoading(true);
-        productoPromesaLivCom
+        productoPromesaDorBanio
             .then(prod => {
                 if (categoria) {
                     setProductos(prod.filter(prod => prod.categoria === categoria));
@@ -39,10 +39,10 @@ export const ItemListContainerLivCom = () => {
     }
     return (
         <div>
-            <ItemListLivCom productos={productos} />
+            <ItemListDorBanio productos={productos} />
         </div>
     );
 
 }
 
-export default ItemListContainerLivCom;
+export default ItemListContainerDorBanio;

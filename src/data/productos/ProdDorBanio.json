@@ -5,7 +5,8 @@
         "precio": 10500,
         "descripcion": "Este acolchado estación es lo mejor en calidad-precio para renovar tu ropa de cama. Con este acolchado estación te aseguras un descanso único con un estilo refinado para tu habitación.",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/acolchadouno.jpg"
+        "img": "../assets/img/dormitorioybano/acolchadouno.jpg",
+        "categoria": "acolchado"
     },
     {
         "id": 8,
@@ -13,7 +14,8 @@
         "precio": 15600,
         "descripcion": "En el frente liso, tiene en medio un relleno liviano de guata siliconada, lo que lo hace un producto para todo el año. Trae las fundas de almohada haciendo juego.",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/acolchadodos.jpg"
+        "img": "../assets/img/dormitorioybano/acolchadodos.jpg",
+        "categoria": "acolchado"
     },
     {
         "id": 9,
@@ -21,7 +23,8 @@
         "precio": 6500,
         "descripcion": "Alfombra de baño rectangular lisa suave, compuesta por microfibra.",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/alfombrasuno.jpg"
+        "img": "../assets/img/dormitorioybano/alfombrasuno.jpg",
+        "categoria": "alfombra"
     },
     {
         "id": 10,
@@ -29,7 +32,8 @@
         "precio": 5600,
         "descripcion": "Alfombra de baño rectangular lisa, compuesta por poliester. Suave y cómoda para tu baño.",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/alfombrasdos.jpg"
+        "img": "../assets/img/dormitorioybano/alfombrasdos.jpg",
+        "categoria": "alfombra"
     },
     {
         "id": 11,
@@ -37,7 +41,8 @@
         "precio": 15500,
         "descripcion": "",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/frazadauno.jpg"
+        "img": "../assets/img/dormitorioybano/frazadauno.jpg",
+        "categoria": "frazada"
     },
     {
         "id": 12,
@@ -45,6 +50,7 @@
         "precio": 10600,
         "descripcion": "",
         "cantidad": 0,
-        "img": "../assets/img/dormitorioybano/frazadados.jpg"
+        "img": "../assets/img/dormitorioybano/frazadados.jpg",
+        "categoria": "frazada"
     }
 ]

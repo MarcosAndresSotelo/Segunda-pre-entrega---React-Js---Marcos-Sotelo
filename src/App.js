@@ -3,6 +3,7 @@ import Navbar from './components/navbar/Navbar'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ItemListContainerLivCom from './components/itemListContainer/ItemListContainerLivCom';
+import ItemListContainerDorBanio from './components/itemListContainer/ItemListContainerDorBanio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './components/inicio/Inicio';
 
@@ -16,7 +17,10 @@ function App() {
 
       <Routes>
         <Route path='/inicio' element={<Inicio />} />
-        <Route path='/livingcomedor/:productosLivCom' element={<ItemListContainerLivCom />} />
+        <Route path='/livingcomedor' element={<ItemListContainerLivCom />} />
+        <Route path='/livingcomedor/:categoria' element={<ItemListContainerLivCom />} />
+        <Route path='/dormitorioBanio' element={<ItemListContainerDorBanio />} />
+        <Route path='/dormitorioBanio/:categoria' element={<ItemListContainerDorBanio />} />
       </Routes>
 
 
