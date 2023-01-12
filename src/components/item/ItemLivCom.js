@@ -1,5 +1,7 @@
 import React from "react";
-import { Card, Button, Image } from "react-bootstrap";
+import { Card, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 
 export const ItemLivCom = ({ prod }) => {
     return (
@@ -10,10 +12,10 @@ export const ItemLivCom = ({ prod }) => {
                     <Card.Body>
                         <Card.Title>{prod.nombre}</Card.Title>
                         <Card.Text>
-                           Categoria:<br /> {prod.categoria}
+                            Categoria:<br /> {prod.categoria}
                         </Card.Text>
                         <Card.Text>${prod.precio}</Card.Text>
-                        <Button variant="primary">Ver mas</Button>
+                        <Link to={`/detalle/${prod.id}`} className="btn btn-primary">Ver más</Link>
                     </Card.Body>
                 </Card>
             </div>

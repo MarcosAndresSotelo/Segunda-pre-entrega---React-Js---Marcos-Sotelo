@@ -1,28 +1,24 @@
-import { setItem } from "localforage";
 import { useEffect, useState } from "react";
-import { pedirItemPorId } from "../../helper/productoPromesaLivCom"
-import ItemDetailLivCom from "../ItemDetailLivCom"
+import { useParams } from "react-router-dom";
+import { pedirItemPorIdLivCom } from "../../helper/pedirDatosLivCom"
+import ItemDetailLivCom from "../itemDetail/ItemDetailLivCom"
 
-const ItemDetailContainerLivCom = ({ id }) => {
+const ItemDetailContainerLivCom = () => {
+
     const [item, setItem] = useState(null)
-    const [error, setError] = useState(null)
+    const { itemId } = useParams()
 
     useEffect(() => {
-        setError(null)
-
-        pedirItemPorId(id)
+        pedirItemPorIdLivCom( itemId )
             .then((data) => {
                 setItem(data)
             })
-            .catch((err) => {
-                setError(err.error)
-            })
-    }, [id])
+    }, [itemId])
 
     return (
         <div className="container my-5">
             {
-                error ? error : item && <ItemDetailLivCom {...item} />
+                item && <ItemDetailLivCom {...item}/>
             }
         </div>
     )

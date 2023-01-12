@@ -6,6 +6,7 @@ import ItemListContainerLivCom from './components/itemListContainer/ItemListCont
 import ItemListContainerDorBanio from './components/itemListContainer/ItemListContainerDorBanio';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Inicio from './components/inicio/Inicio';
+import ItemDetailContainerLivCom from './components/itemDetailContainer/ItemDetailContainerLivDor';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path='/inicio' element={<Inicio />} />
         <Route path='/livingcomedor' element={<ItemListContainerLivCom />} />
         <Route path='/livingcomedor/:categoria' element={<ItemListContainerLivCom />} />
+        <Route path="/detalle/:itemIdLivCom" element={ <ItemDetailContainerLivCom />} />
         <Route path='/dormitorioBanio' element={<ItemListContainerDorBanio />} />
         <Route path='/dormitorioBanio/:categoria' element={<ItemListContainerDorBanio />} />
       </Routes>
