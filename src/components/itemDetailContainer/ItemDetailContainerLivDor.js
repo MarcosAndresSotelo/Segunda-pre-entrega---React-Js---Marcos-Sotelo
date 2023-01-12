@@ -6,19 +6,23 @@ import ItemDetailLivCom from "../itemDetail/ItemDetailLivCom"
 const ItemDetailContainerLivCom = () => {
 
     const [item, setItem] = useState(null)
+    const [error, setError] = useState(null)
     const { itemId } = useParams()
 
     useEffect(() => {
-        pedirItemPorIdLivCom( itemId )
+        pedirItemPorIdLivCom(itemId)
             .then((data) => {
                 setItem(data)
             })
+            .catch((err) =>
+                setError(err.error)
+            )
     }, [itemId])
 
     return (
         <div className="container my-5">
             {
-                item && <ItemDetailLivCom {...item}/>
+                error ? error : item && <ItemDetailLivCom {...item} />
             }
         </div>
     )

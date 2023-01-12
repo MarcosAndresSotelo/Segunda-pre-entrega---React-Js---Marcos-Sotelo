@@ -1,9 +1,9 @@
 
-const Inicio = () => {
+const Contacto = () => {
     return (
         <div className="container my-5">
             <h1>
-                Inicio:
+                Contacto:
                 <br/>
                 Pagina en construccion
             </h1>
@@ -11,4 +11,4 @@ const Inicio = () => {
     )
 }
 
-export default Inicio
+export default Contacto

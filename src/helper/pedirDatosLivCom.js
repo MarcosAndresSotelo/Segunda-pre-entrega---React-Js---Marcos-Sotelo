@@ -9,7 +9,7 @@ export const pedirItemPorIdLivCom = (id) => {
                 resolve(item)
             } else {
                 reject({
-                    error: 'No se encontró ese producto'
+                    error: 'Error'
                 })
             }
         }, 500)

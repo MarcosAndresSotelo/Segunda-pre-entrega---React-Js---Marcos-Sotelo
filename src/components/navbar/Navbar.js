@@ -51,8 +51,8 @@ export const NavBar = () => {
                             </Link>
                         </NavDropdown>
 
-                        <Link href="#acercaDe" style={{ textDecoration: 'none', paddingLeft: "30px" }} >Acerca de</Link>
-                        <Link href="#contacto" style={{ textDecoration: 'none', paddingLeft: "30px" }}>Contacto</Link>
+                        <Link to='/acercaDe' style={{ textDecoration: 'none', paddingLeft: "30px" }} >Acerca de</Link>
+                        <Link to='/contacto'  style={{ textDecoration: 'none', paddingLeft: "30px" }}>Contacto</Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
